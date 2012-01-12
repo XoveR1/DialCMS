@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery-ui-override.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.ui.selectmenu.css" type="text/css" />
+        <link rel="stylesheet" href="css/individual.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        
+        <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.checkbox.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.radiobutton.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.scroll.js"></script>
+        <script type="text/javascript" src="js/jquery.treeview.js"></script>
+        <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="js/jquery.timers-1.2.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.combobox.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.selectmenu.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.checkbox.js"></script>
+        <script type="text/javascript" src="js/ui.checkbox.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="ITRexGroup" />
+        <meta name="description" content="ITRexGroup" />
+        <meta name="author" content="XoveR"/>
+        <meta name="copyright" content="XoveR"/>
+        <title>ITRex Group</title>
+    </head>
+    <body>        
+        <div id="page">
+            <div id="wrapper">
+                <div id="header">                    
+                    <h1 class="logo" >
+                        <a href="index.html">ITRex Group</a>
+                    </h1>
+                    <div class="login">
+                        <p>Welcome, <strong>Sean Vesce</strong></p>
+                        <a rel="dialog_content" class="simpledialog" href="#">
+                            <span>Sign Out</span>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a class="active">Slates</a>
+                            </li>
+                            <li>
+                                <a href="#">Client Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Account Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="main-grid">
+                        <div class="left-column">
+                            <h2>Available Slates</h2>
+                            <table class="list">
+                                <thead>
+                                    <tr>
+                                        <th width="30%">
+                                            <a href="#">State Report Name</a>
+                                        </th>
+                                        <th width="10%">
+                                            <a href="#">Author</a>
+                                        </th>
+                                        <th width="20%">
+                                            <a href="#">Last Updates</a>
+                                        </th>
+                                        <th width="40%">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row0">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row1">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row0">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row1">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row0">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row1">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row0">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row1">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row0">
+                                        <td>
+                                            <a href="#">HRIS_Export_102010.xlsx</a>
+                                        </td>
+                                        <td>D. Gallagher</td>
+                                        <td>January 5th, 2011, 12:00 PM</td>
+                                        <td class="tools">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/edit.png" alt="" />
+                                                        <span>Edit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/duplicate.png" alt="" />
+                                                        <span>Dublicate</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/icons/delete.png" alt="" />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="right-column">
+                            <a class="create" href="#">
+                                <span>Create New Slate</span>
+                            </a>
+                            <ul class="tasks">
+                                <li>
+                                    <label for="createdby">Show Slates Created By</label>
+                                </li>
+                                <li>
+                                    <select name="createdby" id="createdby">
+                                        <option value="1">D. Gallagher</option>
+                                        <option value="2">D. Gallagher</option>
+                                        <option value="3">D. Gallagher</option>
+                                        <option value="4">D. Gallagher</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Recently Edited Slates</label>
+                                </li>
+                                <li>
+                                    <ul class="catalog">
+                                        <li><a id="w-1" href="#"><i class="i16 i16_doc"></i>Slate view settings</a></li>
+                                        <li><a id="w-2"  href="#"><i class="i16 i16_doc"></i>Edit Project Properties</a></li>
+                                        <li><a id="w-3"  href="#"><i class="i16 i16_doc"></i>Slate Version Details</a></li>
+                                        <li><a id="w-4" href="#"><i class="i16 i16_doc"></i>Export Slate</a></li>
+                                        <li><a id="w-5"  href="#"><i class="i16 i16_doc"></i>Assign Employee to Project</a></li>
+                                        <li><a id="w-6"  href="#"><i class="i16 i16_doc"></i> CD_SlateRollup_Q2_2010</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Dialogs  -->
+        
+        <div class="pop popup-dialog" title="Sign In">
+            <div class="form">
+                <p class="err"><i class="i16 i16_err"></i>We didn't recognize the password you entered.  Please try again.</p>
+                <p><span class="field field_max"><span class="field__i"><input type="text" placeholder="Login" /></span></span></p>
+                <p><span class="field field_max field_err"><span class="field__i"><input type="password" placeholder="Password" /></span></span></p>
+                <p class="form__section"><small><label><input type="checkbox" /> Remember me</label></small></p>
+                <div class="form__ctrls">
+                    <a href="#" class="bt-l"><span><i class="i16 i16_ok"></i>Login</span></a>
+                    <a href="#" class="pop__bt_close">Cancel</a>
+                </div><!--form__ctrls-->
+
+                <div class="hr"></div>
+
+                <ul class="addit">
+                    <li><a href="#">Forgot Your Login Credentials?</a></li>
+                    <li><a href="#">Need to Register?</a></li>
+                </ul>
+            </div><!--form-->
+        </div><!--pop-->
+
+        <div class="popSS popup-dialog" title="Slate View Settings">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Visibility Options</legend>
+                    <ul class="checkbox-list">
+                        <li>
+                            <input type="checkbox" id="ch1" name="che1" value=""/>
+                            <label for="ch1">Show Schedule</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked="checked" id="ch2" name="che2"/>
+                            <label for="ch2">Show Headcount Totals</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ch3" name="che3"/>
+                            <label for="ch3">Show Inactive Employers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked="checked" id="ch4" name="che4"/>
+                            <label for="ch4">Highlight <i>To-Be-Hired</i>&nbsp; Employees</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ch5" name="che5"/>
+                            <label for="ch5">Highlight Employees by Department</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ch6" name="che1"/>
+                            <label for="ch6">Employee Properties List</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Display Formats</legend>
+                    <ul class="radio-list">
+                        <li>
+                            <b>Time Header:</b>
+                            <span>
+                                <input checked="checked" type="radio" name="field1" id="rd1"/>
+                                <label for="rd1">Annual</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="field1" id="rd2"/>
+                                <label for="rd2">Financial Quarters</label>
+                            </span>
+                        </li>
+                        <li>
+                            <b>Allocation Value:</b>
+                            <span>
+                                <input checked="checked" type="radio" name="field2" id="rd3"/>
+                                <label for="rd3">0.0</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="field2" id="rd4"/>
+                                <label for="rd4">0.00</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="field2" id="rd5"/>
+                                <label for="rd5">%</label>
+                            </span>
+                        </li>
+                        <li>
+                            <b>Total Man Months:</b>
+                            <span>
+                                <input checked="checked" type="radio" name="field3" id="rd6"/>
+                                <label for="rd6">0.0</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="field3" id="rd7"/>
+                                <label for="rd7">0.00</label>
+                            </span>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="ccntrols">
+                    <a class="close" href="#">Cancel</a>
+                    <a class="bt-ok">
+                        <span><i class="i16 i16_ok"></i>OK</span>
+                    </a>
+                </div>
+            </form>
+        </div><!--pop-->
+
+        <div class="popPP popup-dialog" title="Edit Project Properties">
+            <form action="#" method="post">
+                <ul class="fields-list">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input class="field" type="text" name="name" id="name" value="Project 1"/>
+                    </li>
+                    <li>
+                        <label for="code">Code:</label>
+                        <input class="field" type="text" name="code" id="code" value="proj01"/>
+                    </li>
+                    <li>
+                        <label for="nickname">Nickname:</label>
+                        <input class="field" type="text" name="nickname" id="nickname" value="TRD4"/>
+                    </li>
+                    <li>
+                        <label for="manager">Manager:</label>
+                        <select  class="field" name="manager" id="manager">
+                            <option selected="selected">Tim Lightfoot</option>
+                            <option>Tim Lightfoot</option>
+                            <option>Tim Lightfoot</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="diskription">Description:</label>
+                        <textarea  class="field" name="diskription" id="diskription" cols="10" rows="6"></textarea>
+                    </li>
+                </ul>
+                <div class="avatar">
+                    <img src="i/no-icon.png" alt=""/>
+                    <a href="">Add Project Icon</a>
+                </div>
+                <div class="clear"></div>
+                <div class="controls">
+                    <a class="close" href="#">Cancel</a>
+                    <a class="bt-ok">
+                        <span><i class="i16 i16_ok"></i>OK</span>
+                    </a>
+                </div>
+            </form>
+        </div><!--pop-->
+
+        <div class="popVD" style="display:none;" title="Slate Version Details">
+            <form action="#" method="post">
+                <ul class="fields-list-static">
+                    <li>
+                        <label>Slate Report:</label>
+                        <span>CD_SlateRollup_Q2_2010_2011</span>
+                    </li>
+                    <li>
+                        <label>By:</label>
+                        <span>D. Gallagher</span>
+                    </li>
+                    <li>
+                        <label>On:</label>
+                        <span>January 5th, 2011 at 14:30</span>
+                    </li>
+                </ul>
+                <ul class="fields-list">
+                    <li>
+                        <label for="summary">Summary:</label>
+                        <span class="field field_max">
+                            <span class="field__i">
+                                <input type="text" name="summary" id="summary" value="New Projects Added"/>
+                            </span>
+                        </span>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <label for="details">Details:</label>
+                        <span class="field field_max">
+                            <span class="field__i">
+                                <textarea name="details" id="details" cols="10" rows="8">Added “Project Alpha” and “Project Beta” per Mike’s request and setup the basic milestones. We’ll need Mike to go back and make adjustments once we get final approval from head office.
+
+Feel free to make any required edits or drop me an email if you have any questions.</textarea>
+                            </span>
+                        </span>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="form__ctrls ccntrols">
+                    <a class="bt-l">
+                        <span><i class="i16 i16_ok"></i>OK</span>
+                    </a>
+                </div>
+            </form>
+        </div><!--pop-->
+
+
+        <div class="popES" style="display:none;" title="Export Slate">
+            <form action="#" method="post">
+                <ul class="fields-list">
+                    <li>
+                        <label>Export Mode:</label>
+                        <span class="field_radio field-item">
+                            <input type="radio" checked="checked" id="export_mode_1" name="export_mode"/>
+                            <label for="export_mode_1">Full Slate Report</label>
+                            <input type="radio" id="export_mode_2" name="export_mode"/>
+                            <label for="export_mode_2">Assignments and Allocations</label>
+                        </span>  
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <label>Include Selection:</label>
+                        <div class="checked-tree field-item">
+                            <div id="scroll-pane">
+                                <div id="scroll-content">
+                                    <ul id="tree">
+                                        <li>
+                                            <span>
+                                                <input checked="checked" type="checkbox" id="item1" name="item1"/>
+                                                <label for="item1">CD_SlateRollup_Q2_2010_2011</label>
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <input checked="checked" type="checkbox" id="item1_1" name="item1_1"/>
+                                                        <label for="item1_1">Project One</label>
+                                                    </span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_1_1" name="item1_1_1"/>
+                                                                <label for="item1_1_1">Team A</label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_1_2" name="item1_1_2"/>
+                                                                <label for="item1_1_2">Team B</label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_1_3" name="item1_1_3"/>
+                                                                <label for="item1_1_3">Team C</label>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        <input checked="checked" type="checkbox" id="item1_2" name="item1_2"/>
+                                                        <label for="item1_2">Project Two</label>
+                                                    </span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_2_1" name="item1_2_1"/>
+                                                                <label for="item1_2_1">Team A</label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_2_2" name="item1_2_2"/>
+                                                                <label for="item1_2_2">Team B</label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <input checked="checked" type="checkbox" id="item1_2_3" name="item1_2_3"/>
+                                                                <label for="item1_2_3">Team C</label>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <label>Date Range:</label>
+                        <span class="field-item">
+                            <input type="text" title="Start Date" id="date_range_1" name="date_range_start" class="datepicker" value="Start"/>
+                            <span class="horbar">&mdash;</span>
+                            <input type="text" title="End Date"  id="date_range_2" name="date_range_end" class="datepicker" value="End"/>
+                        </span>   
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="form__ctrls ccntrols">
+                    <a class="pop__bt_close" href="#">Cancel</a>
+                    <a class="bt-l">
+                        <span><i class="i16 i16_ok"></i>Export</span>
+                    </a>
+                </div>
+            </form>
+        </div><!--pop-->
+
+        <div class="popAE" style="display:none;" title="Assign Employee to Project">
+            <form action="#" method="post">
+                <div class="filter">
+                    <fieldset id="left-fieldset">
+                        <legend>Selection</legend>
+                        <span id="assign_name" class="field-item">
+                            <select class="combobox" name="name_type" id="name_type">
+                                <option value="">Type a name to search</option>
+                                <option value="1">Tim Lightfoot</option>
+                                <option value="2">Tim Lightfoot</option>
+                            </select>
+                        </span>
+                        <button class="easy-button" type="submit"><span>Select</span></button>
+                    </fieldset>
+                    <fieldset id="right-fieldset">
+                        <legend>Auto Allocation</legend>
+                        <span id="assigb_by_field" class="field-item">
+                            <select class="combobox" name="assigb_by" id="assigb_by">
+                                <option value="">Assign by</option>
+                                <option>Tim Lightfoot</option>
+                                <option>Tim Lightfoot</option>
+                                <option>Tim Lightfoot</option>
+                            </select>
+                        </span>
+                        <span id="value_field" class="field-item field field_max">
+                            <span class="field__i">
+                                <input type="text" placeholder="Value" name="value" id="value"/>
+                            </span>
+                        </span>
+                        <span id="date_pickers" class="field-item">
+                            <input type="text" title="Start Date" id="date_1" name="date_1_start" class="datepicker" value="Start"/>
+                            <span class="horbar">&mdash;</span>
+                            <input type="text" title="End Date"  id="date_2" name="date_2_end" class="datepicker" value="End"/>
+                        </span>
+                    </fieldset>
+                    <div class="clear"></div>
+                </div>
+                <div class="scroll-conteiner">
+                    <div class="content">
+                        <table class="sortable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox"/>
+                                    </th>
+                                    <th>
+                                        Employee<i class="i16"></i>
+                                    </th>
+                                    <th>
+                                        Office<i class="i16"></i>
+                                    </th>
+                                    <th>
+                                        Dept<i class="i16"></i>
+                                    </th>
+                                    <th>
+                                        Title<i class="i16"></i>
+                                    </th>
+                                    <th>
+                                        Availability,%<i class="i16"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Alvarez, Thomas</td>
+                                    <td>SF</td>
+                                    <td>Art</td>
+                                    <td>SF, Principal</td>
+                                    <td><span class="hatching nbg">0</span></td>
+                                </tr>
+                                <tr class="selectable">
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Bush, Andrea</td>
+                                    <td>SF</td>
+                                    <td>Admin</td>
+                                    <td>SF, 3</td>
+                                    <td><span class="white nbg">100</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Fitzgerald, Renae</td>
+                                    <td>SF</td>
+                                    <td>QA</td>
+                                    <td>SF, Principal</td>
+                                    <td><span class="orange nbg">83</span></td>
+                                </tr>
+                                <tr class="selectable">
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Flores, Ray</td>
+                                    <td>SF</td>
+                                    <td>Admin</td>
+                                    <td>Admin</td>
+                                    <td><span class="red nbg">150</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Klein, Evelina</td>
+                                    <td>SF</td>
+                                    <td>Finance</td>
+                                    <td>Accountant</td>
+                                    <td><span class="white nbg">100</span></td>
+                                </tr>
+                                <tr class="selectable">
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Koenig, David</td>
+                                    <td>SF</td>
+                                    <td>Tech</td>
+                                    <td>Studio Manager</td>
+                                    <td><span class="hatching nbg">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Lebedev, Artemy</td>
+                                    <td>SF</td>
+                                    <td>Design</td>
+                                    <td>SF, Senior</td>
+                                    <td><span class="red nbg">125</span></td>
+                                </tr>
+                                <tr class="selectable">
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Alvarez, Thomas</td>
+                                    <td>SF</td>
+                                    <td>Art</td>
+                                    <td>SF, Principal</td>
+                                    <td><span class="hatching nbg">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Bush, Andrea</td>
+                                    <td>SF</td>
+                                    <td>Admin</td>
+                                    <td>SF, 3</td>
+                                    <td><span class="white nbg">100</span></td>
+                                </tr>
+                                <tr class="selectable">
+                                    <td>
+                                        <input type="checkbox"/>
+                                    </td>
+                                    <td>Fitzgerald, Renae</td>
+                                    <td>SF</td>
+                                    <td>QA</td>
+                                    <td>SF, Principal</td>
+                                    <td><span class="orange nbg">83</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="form__ctrls ccntrols">
+                    <a class="pop__bt_close" href="#">Cancel</a>
+                    <a class="bt-l">
+                        <span><i class="i16 i16_ok"></i>Assign</span>
+                    </a>
+                </div>
+            </form>
+        </div><!--pop-->
+        
+        <!-- Dialogs  -->
+        
+    </body>
+</html>

@@ -1,0 +1,34 @@
+.ui-dialog.ui-widget {font:inherit;}
+.ui-dialog.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button { font:inherit; }
+.ui-dialog .ui-widget-header { border:none 0; background:#3b3b3b url(../images/pop-h-gd.png) repeat-x 0 0; color:inherit; font-weight:normal; height:20px; padding:10px 40px; color:#fff; -webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-ms-border-radius:5px 5px 0 0;-o-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;}
+.ui-dialog .ui-widget-header a {color:#fff;}
+.ui-dialog .ui-widget-content {border:none 0; background:none; color:inherit;}
+.ui-dialog .ui-widget-content a { color:#1b5ab2; text-decoration:none;}
+.ui-dialog.ui-widget-content a:hover {color:#fa923e;}
+.ui-dialog {padding:0; width:360px; background:none; border:0 none;}
+.ui-dialog .ui-dialog-title { float:left; margin:0; font-size: 1.2em;}
+.ui-dialog .ui-dialog-content {position:relative; border:0; padding:20px 40px; background:#fff url(../images/pop-i-gd.png) repeat-x 0 100%; -webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-ms-border-radius:0 0 5px 5px;-o-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px; overflow:visible;}
+.ui-dialog .ui-dialog-titlebar-close,
+.ui-dialog .ui-dialog-buttonpane,
+.ui-dialog .ui-resizable-se {display:none;}
+
+.ui-checkbox{display: inline-block}
+.ui-checkbox label{padding: 0 0 0 20px; margin: 0}
+.ui-checkbox .ui-checkbox-box{border: none; }
+.ui-checkbox .ui-state-focus, .ui-checkbox .ui-state-hover{background: none}
+.ui-checkbox .ui-state-hover{background: none}
+.ui-checkbox .ui-checkbox-icon{background: url(../images/icons/checkbox_off.png) 0 0 no-repeat; width: 14px; height: 14px; display: block}
+.ui-checkbox span.ui-icon-check{background-image: url(../images/icons/checkbox_on.png);}
+
+
+.ui-checkbox{border: none !important; display: inline-block; position: relative; top: 2px}
+.ui-checkbox.ui-state-default{background: url(../images/spr-ico.png) -136px 0 no-repeat; width: 14px; height: 14px; display: inline-block}
+.ui-checkbox.ui-state-active{background-position: -153px 0;}
+
+.ui-radio{border: none !important; display: inline-block; position: relative; top: 2px}
+.ui-radio.ui-state-default{background: url(../images/spr-ico.png) -169px 0 no-repeat; width: 14px; height: 15px;}
+.ui-radio.ui-state-active{background-position: -185px 0; }
+span.ui-state-active{border: none !important; font-weight: normal !important; color: #555 !important}
