@@ -1076,7 +1076,7 @@ table.sortable .i16{background-position:-119px -26px;}
 table.sortable .headerSortDown .i16{background-position:-152px -22px;}
 table.sortable .headerSortUp .i16{background-position:-136px -26px;}
 
-.ui-button { margin-left: -1px; height: 33px; background: #fff !important; border: 1px solid #ccc !important; border-left: none !important }
+.ui-button { margin-left: -1px; height: 33px; background: #fff !important; border: 1px solid #ccc !important; border-left: none !important;}
 .ui-button-icon-only .ui-button-text { padding: 0.35em; } 
 .ui-autocomplete-input{margin: 0 -28px 0 0; padding: 9px 20px 9px 9px; border: 1px solid #ccc !important; border-right: none !important; background: #fff !important; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
 .ui-autocomplete-input:focus{border: 1px solid #FA923E}

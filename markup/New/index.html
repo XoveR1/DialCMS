@@ -478,7 +478,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <div class="ccntrols">
+                <div class="controls">
                     <a class="close" href="#">Cancel</a>
                     <a class="bt-ok">
                         <span><i class="i16 i16_ok"></i>OK</span>
@@ -493,30 +493,35 @@
                     <li>
                         <label for="name">Name:</label>
                         <input class="field" type="text" name="name" id="name" value="Project 1"/>
+                        <div class="clear"></div>
                     </li>
                     <li>
                         <label for="code">Code:</label>
                         <input class="field" type="text" name="code" id="code" value="proj01"/>
+                        <div class="clear"></div>
                     </li>
                     <li>
                         <label for="nickname">Nickname:</label>
                         <input class="field" type="text" name="nickname" id="nickname" value="TRD4"/>
+                        <div class="clear"></div>
                     </li>
                     <li>
                         <label for="manager">Manager:</label>
-                        <select  class="field" name="manager" id="manager">
+                        <select class="field" name="manager" id="manager">
                             <option selected="selected">Tim Lightfoot</option>
                             <option>Tim Lightfoot</option>
                             <option>Tim Lightfoot</option>
                         </select>
+                        <div class="clear"></div>
                     </li>
                     <li>
                         <label for="diskription">Description:</label>
                         <textarea  class="field" name="diskription" id="diskription" cols="10" rows="6"></textarea>
+                        <div class="clear"></div>
                     </li>
                 </ul>
                 <div class="avatar">
-                    <img src="i/no-icon.png" alt=""/>
+                    <img src="images/no-icon.png" alt=""/>
                     <a href="">Add Project Icon</a>
                 </div>
                 <div class="clear"></div>
@@ -529,7 +534,7 @@
             </form>
         </div><!--pop-->
 
-        <div class="popVD" style="display:none;" title="Slate Version Details">
+        <div class="popVD popup-dialog" title="Slate Version Details">
             <form action="#" method="post">
                 <ul class="fields-list-static">
                     <li>
@@ -548,27 +553,19 @@
                 <ul class="fields-list">
                     <li>
                         <label for="summary">Summary:</label>
-                        <span class="field field_max">
-                            <span class="field__i">
-                                <input type="text" name="summary" id="summary" value="New Projects Added"/>
-                            </span>
-                        </span>
+                        <input class="field" type="text" name="summary" id="summary" value="New Projects Added"/>
                         <div class="clear"></div>
                     </li>
                     <li>
                         <label for="details">Details:</label>
-                        <span class="field field_max">
-                            <span class="field__i">
-                                <textarea name="details" id="details" cols="10" rows="8">Added “Project Alpha” and “Project Beta” per Mike’s request and setup the basic milestones. We’ll need Mike to go back and make adjustments once we get final approval from head office.
+                        <textarea class="field" name="details" id="details" cols="10" rows="8">Added “Project Alpha” and “Project Beta” per Mike’s request and setup the basic milestones. We’ll need Mike to go back and make adjustments once we get final approval from head office.
 
 Feel free to make any required edits or drop me an email if you have any questions.</textarea>
-                            </span>
-                        </span>
                         <div class="clear"></div>
                     </li>
                 </ul>
-                <div class="form__ctrls ccntrols">
-                    <a class="bt-l">
+                <div class="controls">
+                    <a class="bt-ok">
                         <span><i class="i16 i16_ok"></i>OK</span>
                     </a>
                 </div>
@@ -576,7 +573,7 @@ Feel free to make any required edits or drop me an email if you have any questio
         </div><!--pop-->
 
 
-        <div class="popES" style="display:none;" title="Export Slate">
+        <div class="popES popup-dialog" title="Export Slate">
             <form action="#" method="post">
                 <ul class="fields-list">
                     <li>
@@ -671,16 +668,16 @@ Feel free to make any required edits or drop me an email if you have any questio
                         <div class="clear"></div>
                     </li>
                 </ul>
-                <div class="form__ctrls ccntrols">
-                    <a class="pop__bt_close" href="#">Cancel</a>
-                    <a class="bt-l">
+                <div class="controls">
+                    <a class="close" href="#">Cancel</a>
+                    <a class="bt-ok">
                         <span><i class="i16 i16_ok"></i>Export</span>
                     </a>
                 </div>
             </form>
         </div><!--pop-->
 
-        <div class="popAE" style="display:none;" title="Assign Employee to Project">
+        <div class="popAE popup-dialog" title="Assign Employee to Project">
             <form action="#" method="post">
                 <div class="filter">
                     <fieldset id="left-fieldset">
@@ -704,10 +701,8 @@ Feel free to make any required edits or drop me an email if you have any questio
                                 <option>Tim Lightfoot</option>
                             </select>
                         </span>
-                        <span id="value_field" class="field-item field field_max">
-                            <span class="field__i">
-                                <input type="text" placeholder="Value" name="value" id="value"/>
-                            </span>
+                        <span id="value_field" class="field-item">
+                            <input type="text" placeholder="Value" name="value" id="value"/>
                         </span>
                         <span id="date_pickers" class="field-item">
                             <input type="text" title="Start Date" id="date_1" name="date_1_start" class="datepicker" value="Start"/>
@@ -847,9 +842,9 @@ Feel free to make any required edits or drop me an email if you have any questio
                         </table>
                     </div>
                 </div>
-                <div class="form__ctrls ccntrols">
-                    <a class="pop__bt_close" href="#">Cancel</a>
-                    <a class="bt-l">
+                <div class="controls">
+                    <a class="close" href="#">Cancel</a>
+                    <a class="bt-ok">
                         <span><i class="i16 i16_ok"></i>Assign</span>
                     </a>
                 </div>

@@ -32,3 +32,43 @@
 .ui-radio.ui-state-default{background: url(../images/spr-ico.png) -169px 0 no-repeat; width: 14px; height: 15px;}
 .ui-radio.ui-state-active{background-position: -185px 0; }
 span.ui-state-active{border: none !important; font-weight: normal !important; color: #555 !important}
+
+.ui-selectmenu.ui-state-default.field{background-color: #F2F2F2; color: #999999}
+.ui-selectmenu.ui-state-focus.field{background-color: #FFFFFF;}
+.ui-selectmenu.ui-state-hover.field{background-color: #F2F2F2; color: #999999}
+
+.ui-datepicker{background: #fff url(../images/dp-bg.png) 0 0 repeat-x;}
+.ui-datepicker .ui-widget-header{background: none; border: none}
+.ui-datepicker .ui-datepicker-prev{background: #ededed; border: 1px solid #cbd1d6; border-top: 1px solid #a0a4a8; left: -1px; top: 0; -webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;}
+.firefox .ui-datepicker-prev, .firefox .ui-datepicker .ui-datepicker-prev-hover{top: 0}
+.ui-datepicker .ui-datepicker-prev-hover{ left:-1px; top: 0}
+.ui-datepicker .ui-datepicker-prev .ui-icon{background: url(../images/spr-ico.png) -102px -26px no-repeat;}
+.ui-datepicker .ui-datepicker-next{background: #ededed; border: 1px solid #cbd1d6; border-top: 1px solid #a0a4a8; right: -1px; top: 0; -webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;}
+.firefox .ui-datepicker-next, .firefox .ui-datepicker .ui-datepicker-next-hover{top:0}
+.ui-datepicker .ui-datepicker-next-hover{ right: -1px; top: 0}
+.ui-datepicker .ui-datepicker-next .ui-icon{background: url(../images/spr-ico.png) -85px -26px no-repeat;}
+.ui-datepicker h3{color: #FFFFFF; text-shadow: 1px 1px 0 #9a9a9a; font-size: 1em; font-weight: 500; height: 27px; line-height: 23px; margin-bottom: 5px; padding: 0 8px;}
+.ui-datepicker .ui-datepicker-title select{height: 25px}
+.ui-datepicker .ui-datepicker-week-end span{color: #ff7200 !important}
+.ui-datepicker .ui-datepicker-calendar th span{color: #999;}
+.ui-datepicker .ui-datepicker-calendar td{padding: 0;}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-other-month a{background: none; border: 1px solid #fff; color: #999}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-other-month a.ui-state-hover{background-color: #fff}
+.ui-datepicker .ui-datepicker-calendar td a{color: #333; text-align: center; background: #f2f2f2; border: 1px solid #fff; border-left-color: #f2f2f2; border-right-color: #f2f2f2;}
+.ui-datepicker .ui-datepicker-calendar a.ui-state-hover{border: 1px solid #a0a4a8; background: #999}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a{background: #fff; border: 1px solid #a0a4a8}
+
+.ui-button { margin-left: -1px; height: 33px; background: #fff !important; border: 1px solid #ccc !important; border-left: none !important;}
+.ui-button-icon-only .ui-button-text { padding: 0.35em; } 
+.ui-autocomplete-input{margin: 0 -28px 0 0; padding: 9px 20px 9px 9px; border: 1px solid #ccc !important; border-right: none !important; background: #fff !important; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+.ui-autocomplete-input:focus{border: 1px solid #FA923E}
+.ui-button .ui-button-icon-only .ui-icon{border-left: 4px solid #FFFFFF;border-right: 4px solid #FFFFFF;border-top: 4px solid #555555;}
+.ui-state-default .ui-icon{background-image: url("images/ui-icons_222222_256x240.png") !important}
+.ui-menu{background: #fff; padding: 1px !important; -webkit-border-radius: 3px 3px 0 0 !important;-moz-border-radius: 3px 3px 0 0!important;-ms-border-radius: 3px 3px 0 0!important;-o-border-radius: 3px 3px 0 0!important;border-radius: 3px 3px 0 0 !important;}
+.ui-menu li{height: 30px}
+.ui-menu li:hover{background: #F2F2F2 !important;}
+.ui-menu .ui-menu-item a{color: #1B5AB2 !important}
+.ui-menu .ui-menu-item a:hover{background: #F2F2F2 !important; color: #FF7200 !important; border: 1px solid #F2F2F2 !important;  -webkit-border-radius:0 !important;-moz-border-radius:0 !important;-ms-border-radius:0 !important;-o-border-radius:0 !important;border-radius:0 !important;}
+
+
+

@@ -332,7 +332,7 @@ $(document).ready(function(){
 	
     $('.datepicker').datepicker({
         showOn: "button",
-        buttonImage: "i/date-ico.png",
+        buttonImage: "images/date-ico.png",
         buttonImageOnly: true,
         changeMonth: true,
         changeYear: true,

@@ -9,8 +9,6 @@ li{list-style: none}
 
 @font-face { font-family: 'Ubuntu'; src: url(../fonts/Ubuntu-M.ttf); }
 
-select{min-width: 150px;}
-
 fieldset{border: none; border-top: 1px dotted #ff7200; padding: 10px 0 15px 0}
 fieldset legend{color: #ff7200; background: #fff; font-weight: 500; text-shadow: 0 1px 0 #ffe3cc; padding: 0 17px 3px 0}
 
@@ -85,8 +83,16 @@ ul.catalog li{background: url(../images/icons/list.png) 1px 50% no-repeat; paddi
 .sd_container ul.links_list{padding: 20px 0 0 0; margin: 8px 0 0 0}
 .sd_container ul.links_list li{list-style: none; padding: 0 0 5px 0}
 
-input[type="text"],input[type="password"],textarea{padding: 5px; color: #999999; background: #f2f2f2; border: 1px solid #ccc; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
-input[type="text"]:hover,input[type="password"]:hover,textarea:hover{background: #fff; border-color: #fa923e; color: #555555; text-shadow: #ddd 1px -1px 0 }
+/* Hovers, focuses, errors and styles for input elements  */
+input[type="text"],
+input[type="password"],
+textarea{padding: 5px; color: #999999; background: #f2f2f2; border: 1px solid #ccc; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus{background: #fff; border-color: #fa923e; color: #555555; text-shadow: #ddd 1px -1px 0 }
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover{border-color: #fa923e; text-shadow: #ddd 1px -1px 0 }
 input.error,textareas.error{color: #aa2121 !important; background: #ffe1e1 !important; border: 1px solid #aa2121 !important}
 
 
@@ -120,6 +126,7 @@ input.error,textareas.error{color: #aa2121 !important; background: #ffe1e1 !impo
 .i16_delete {background-position:-85px 0;}
 .i16_err {background-position:-102px 0;}
 .i16_ok {background-position:-119px 0;}
+.i16_dp {background-position:-52px -27px; margin-right: 8px}
 
 .link-i16 {padding-left:18px; position:relative;}
 .link-i16 .i16 {position:absolute; left:0; top:-2px;}
@@ -131,9 +138,9 @@ ul.radio-list li span{margin-right: 10px}
 ul.checkbox-list li{padding: 7px 0;}
 ul.checkbox-list li label{display: inline-block}
 
-ul.fields-list > li{margin: 0 0 10px 0; height: 30px; clear: both}
+ul.fields-list > li{margin: 0 0 10px 0; clear: both}
 ul.fields-list li > label{width: 20%; display: inline-block; float: left; margin-top: 6px; font-weight: 500; text-shadow: 1px 1px #e8dcd2; }
-ul.fields-list li .field{width: 70%; display: inline-block; float: right; background-color: #F2F2F2}
+ul.fields-list li .field{width: 70%; display: inline-block; float: right;}
 ul.fields-list a.isel__head{ color: #767676}
 ul.fields-list .field-item{float: left;}
 ul.fields-list .field-item label{margin-right: 10px}
@@ -149,10 +156,65 @@ ul.fields-list-static li span{text-shadow: 1px 1px #f4e7db; font-weight: lighter
 .popup-dialog{display: none; background: #fff url(../images/pop-h-b-gd.png) bottom left repeat-x !important; color: #555 !important}
 .popup-dialog textarea{line-height: 20px}
 
-.ccntrols{text-align: right}
-.ccntrols{margin:1.5em 0 0;}
-.ccntrols A, .ccntrols button {margin:0 10px 0 0; font-weight:500;}
-.ccntrols .bt-ok {margin:0 25px 0 -5px;}
+.controls{text-align: right; margin:1.5em 0 0;}
+.controls A, .controls button {margin:0 10px 0 0; font-weight:500;}
+.controls .bt-ok {margin:0 25px 0 -5px;}
 
-/*  */
+/* Tree of checkboxes */
+#scroll-container{float:left; width:20px; }
+#scroll-pane { float:left;overflow: auto; background: #f2f2f2; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;  width: 290px; height:170px;position:relative;border:1px solid #ccc;display:inline}
+#scroll-content {position:absolute;top:0;left:0}
+.scroll-content-item {background-color:#fcfcfc;color:#003366;width:100px;height:100px;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:inline;}
+#slider-wrap{background-color:lightgrey;width:20px;border:1px solid gray;border-left:none;}
+#slider-vertical{position:relative;height:100%}
+.ui-slider-handle{width:20px;height:10px;margin:0 auto;background-color:darkgray;display:block;position:absolute}
+
+.slide-up{width: 20px; height: 30px; background: red}
+.slide-down{width: 20px; height: 30px; background: black}
+
+.treeview, .treeview ul { padding: 0; margin: 0; list-style: none;}
+.treeview li {margin: 0; }
+.treeview > li{padding: 15px 0 0 25px}
+.treeview li li{padding: 10px 0 0 31px;}
+.treeview li li li{padding: 2px 0 3px 17px;}
+.treeview .hitarea{background: url(../images/spr-ico.png) 0 -23px no-repeat; height: 16px;width: 16px; margin-left: -16px; float: left; cursor: pointer;}
+.treeview .hitarea.expandable-hitarea{background-position: -17px -23px}
+
+input.datepicker{padding: 7px 23px 7px 5px; height: 16px; margin-right: -14px; width: 70px; color: #555; background: #f2f2f2; border: 1px solid #ccc; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+.chrome .datepicker, .safari .datepicker{height: 15px;}
+.ui-datepicker-trigger{position: relative; left: -8px; top: 3px}
+.horbar{margin: 0 7px}
+
+/* Filters block */
+.filter{background: #f2f2f2; padding: 10px 0; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+.filter fieldset{float: left; margin: 0 10px}
+.filter fieldset legend{background: #f2f2f2; padding-right: 12px;}
+.filter .isel__head em{color: #999 !important; font-style: italic !important; font-size: 0.9em}
+.filter .field_sel{width: 160px;}
+.filter .easy-button{float: left; margin-top: 3px;}
+.filter .field-item{float: left; margin-right: 10px}
+.filter input{background: #fff; color: #999 !important; font-style: italic !important}
+
+.scroll-conteiner{position: relative; overflow: auto; margin: 20px 0; border: 1px solid #ccc; -webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+.scroll-conteiner .content{position: absolute; top: 0; left: 0; width: 100%}
+
+.firefox .easy-button{background-position: 100% -256px}
+.easy-button{background: url(../images/spr-btns.png) 100% -257px no-repeat; padding: 0 13px 0 0; border: none; display: inline-block}
+.easy-button span{background: url(../images/spr-btns.png) 0 -257px no-repeat; display: inline-block; height: 24px; padding: 0 2px 0 17px; line-height: 23px;}
+
+/* Sorted tables */
+table.sortable{width: 100%; border-collapse: collapse}
+table.sortable th{background: #fff1e5; padding: 10px 0; text-align: left;  font-weight: 500; cursor: pointer; text-shadow: 1px 1px #e8dcd2; color: #555 !important}
+table.sortable th:first-child, table.sortable td:first-child{padding-left: 15px; width: 30px;}
+table.sortable td{padding: 7px 0}
+table.sortable .selectable td{background: #f2f2f2}
+table.sortable .nbg{display: inline-block; min-width: 30px; padding: 2px 3px}
+table.sortable .hatching{background: url(../images/hatching.png) 0 0 repeat;}
+table.sortable .white{background: #fff}
+table.sortable .red{background: #ffbcb9}
+table.sortable .orange{background: #ffebdb}
+table.sortable .header{height: auto; border: none}
+table.sortable .i16{background-position:-119px -26px;}
+table.sortable .headerSortDown .i16{background-position:-152px -22px;}
+table.sortable .headerSortUp .i16{background-position:-136px -26px;}
 

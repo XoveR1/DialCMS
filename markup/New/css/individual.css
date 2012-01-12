@@ -5,11 +5,26 @@
 .popPP .avatar{float: right; width: 102px; text-align: center; background: #f2f2f2; padding: 20px}
 .popPP .avatar a{margin-top: 10px; display: inline-block}
 .popPP .fields-list{float: left; width: 370px; margin-bottom: 15px;}
-/*.popPP .fields-list li .field{width: 285px;}*/
+.popPP select{width: 270px !important}
 
 .popVD{padding: 20px !important}
 .popVD .fields-list{margin: 25px 0 45px; padding: 0 20px}
 .popVD .fields-list li .field{width: 255px;}
 
+/* Export Slate dialog */
 .popES ul.fields-list label{width: 120px}
 .popES .fields-list > li{margin: 0 0 20px}
+#assign_name .ui-autocomplete-input, #assigb_by_field .ui-autocomplete-input{width: 136px}
+.firefox #value_field input{padding: 9px}
+
+/* Assign Employee to Project dialog */
+.popAE{padding: 20px !important}
+.popAE .scroll-conteiner{height: 200px; margin-bottom: 40px }
+#left-fieldset{width: 32%}
+#right-fieldset{width: 62%}
+#value_field{width: 50px;}
+.chrome #value_field, .safari #value_field, .msie  #value_field{height: 29px }
+#value_field input{padding: 7px; }
+.chrome #value_field input, .safari #value_field input{padding: 14px 7px 0; line-height: 0 }
+#date_pickers{margin: 0}
+#assign_name{margin-right: 3px}

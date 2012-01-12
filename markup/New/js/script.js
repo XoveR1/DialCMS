@@ -1,7 +1,6 @@
 $(function(){
     $('select').selectmenu({
-        style:'dropdown',
-        width: 'auto'
+        style:'dropdown'
     });
     
     // Save old login
@@ -72,7 +71,7 @@ $(function(){
                 var _dialog = $(this);
    
                 // example dialog button
-                $(".pop__bt_close", _dialog).click(function(){
+                $(".close", _dialog).click(function(){
                     _dialog.dialog("close");
                 })
             }
@@ -109,7 +108,7 @@ $(function(){
                 var _dialog = $(this);
                                 
                 // example dialog button
-                $(".pop__bt_close", _dialog).click(function(){
+                $(".close", _dialog).click(function(){
                     _dialog.dialog("close");
                 })
             }
@@ -276,13 +275,10 @@ $(function(){
 	
     $('.datepicker').datepicker({
         showOn: "button",
-        buttonImage: "i/date-ico.png",
+        buttonImage: "images/date-ico.png",
         buttonImageOnly: true,
-        changeMonth: true,
-        changeYear: true,
         showOtherMonths: true,
-        selectOtherMonths: true,
-        beforeShow: waitDatepicker
+        selectOtherMonths: true
     });               
 
     $('input[type="checkbox"]').checkbox();
@@ -315,27 +311,3 @@ $(function(){
     });
 
 });
-
-function waitDatepicker(){
-    var title = $(this).attr('title');
-    $('.ui-datepicker').html('');
-    $('.ui-datepicker').everyTime(10, 'timer', function() {
-        if($(this).find('.ui-datepicker-header').length){
-            $(this).prepend('<h3><i class="i16 i16_dp"></i>' + title + '</h3>');
-            $(this).stopTime('timer');
-            $(this).find('.ui-datepicker-prev').live('click' , function(){
-                if($('.ui-datepicker h3').length){
-                    $('.ui-datepicker h3').remove();
-                }
-                $('.ui-datepicker').prepend('<h3><i class="i16 i16_dp"></i>' + title + '</h3>');
-            });
-            $(this).find('.ui-datepicker-next').live('click' , function(){
-                if($('.ui-datepicker h3').length)
-                {
-                    $('.ui-datepicker h3').remove();
-                }
-                $('.ui-datepicker').prepend('<h3><i class="i16 i16_dp"></i>' + title + '</h3>');
-            })
-        }
-    }, 100);   
-}
