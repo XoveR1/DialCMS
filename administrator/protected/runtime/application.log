@@ -1,0 +1,65 @@
+2012/02/11 15:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('contact')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/contact
+---
+2012/02/11 15:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('contact')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/contact
+---
+2012/02/11 15:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('contact')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/contact
+---
+2012/02/11 15:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/login
+---
+2012/02/11 15:10:43 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.login" is not defined.' in Z:\home\DialCMS\www\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\YiiBase.php(222): CComponent->__set('login', 'site/login')
+#1 Z:\home\DialCMS\www\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 Z:\home\DialCMS\www\framework\base\CApplication.php(503): CModule->getComponent('urlManager')
+#3 Z:\home\DialCMS\www\framework\web\CWebApplication.php(134): CApplication->getUrlManager()
+#4 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/administrator/login
+---
+2012/02/11 16:56:09 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in Z:\home\DialCMS\www\framework\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'form-horizontal')
+#1 Z:\home\DialCMS\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'CActiveForm', Array)
+#2 Z:\home\DialCMS\www\framework\web\CBaseController.php(190): CBaseController->createWidget('CActiveForm', Array)
+#3 Z:\home\DialCMS\www\administrator\themes\basic\views\site\login.php(18): CBaseController->beginWidget('CActiveForm', Array)
+#4 Z:\home\DialCMS\www\framework\web\CBaseController.php(127): require('Z:\home\DialCMS...')
+#5 Z:\home\DialCMS\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('Z:\home\DialCMS...', Array, true)
+#6 Z:\home\DialCMS\www\framework\web\CController.php(870): CBaseController->renderFile('Z:\home\DialCMS...', Array, true)
+#7 Z:\home\DialCMS\www\framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 Z:\home\DialCMS\www\administrator\protected\controllers\SiteController.php(92): CController->render('login', Array)
+#9 Z:\home\DialCMS\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 Z:\home\DialCMS\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 Z:\home\DialCMS\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 Z:\home\DialCMS\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\DialCMS\www\framework\web\CWebApplication.php(276): CController->run('login')
+#14 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#15 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 Z:\home\DialCMS\www\administrator\index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/administrator/login
+---

@@ -1,0 +1,148 @@
+2012/02/08 20:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator/site/page".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator/s...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/site/page?view=about
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 20:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator/site/index".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator/s...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/site/index
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 20:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator/site/index".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator/s...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/site/index
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 20:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator/site/page".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator/s...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/site/page?view=about
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 20:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator/site/login".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator/s...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/site/login
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 21:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/
+---
+2012/02/08 21:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/administrator
+---
+2012/02/08 21:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/administrator
+---
+2012/02/08 21:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/administrator
+---
+2012/02/08 21:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/administrator
+---
+2012/02/08 21:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/site/login
+---
+2012/02/08 21:30:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('administrator')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\administrator\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/administrator/administrator
+HTTP_REFERER=http://dialcms/administrator/site/index
+---
+2012/02/08 21:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "azxczxcr/site/login".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('azxczxcr/site/l...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/azxczxcr/site/login
+---
+2012/02/08 21:38:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "azxczxcr/site/login".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('azxczxcr/site/l...')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/azxczxcr/site/login
+---
+2012/02/11 14:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "www/index.php".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('www/index.php')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/www/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2012/02/11 15:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "www/index.php".' in Z:\home\DialCMS\www\framework\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\DialCMS\www\framework\web\CWebApplication.php(135): CWebApplication->runController('www/index.php')
+#1 Z:\home\DialCMS\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\DialCMS\www\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/www/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2012/10/16 16:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\WebServer\domains\DialCMS\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\WebServer\domains\DialCMS\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\WebServer\domains\DialCMS\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WebServer\domains\DialCMS\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

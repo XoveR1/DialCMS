@@ -1,0 +1,5 @@
+body { padding-top: 60px; padding-bottom: 40px;}
+
+/*Customize bootstrap for Yii*/
+.inline-label{display: inline-block; margin-bottom: 0; vertical-align: middle; padding-left: 2px}
+span.required{color: red}
