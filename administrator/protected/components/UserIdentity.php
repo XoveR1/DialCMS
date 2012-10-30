@@ -6,31 +6,28 @@
  * data can identity the user.
  */
 class UserIdentity extends CUserIdentity {
-    
-    private $_id;
-    
+
+    protected $_id;
+
     /**
      * Authenticates a user.
      * 
      * @return boolean whether authentication succeeds.
      */
     public function authenticate() {
-        $record = User::model()->findByAttributes(array('name' => $this->username));
-        if ($record === null)
+        $user = User::model()->find('LOWER(name)=?', array(strtolower($this->username)));
+        if (($user === null) or (md5($this->password) !== $user->password)) {
             $this->errorCode = self::ERROR_USERNAME_INVALID;
-        else if ($record->password !== md5($this->password))
-            $this->errorCode = self::ERROR_PASSWORD_INVALID;
-        else {
-            $this->_id = $record->id;
-            $this->setState('email', $record->email);
-            $this->setState('roleId', $record->role_id);
+        } else {
+            $this->_id = $user->id;
+            $this->username = $user->name;
+            $this->setState('role', $user->role->name);
             $this->errorCode = self::ERROR_NONE;
         }
         return !$this->errorCode;
     }
-    
-    public function getId()
-    {
+
+    public function getId() {
         return $this->_id;
     }
 

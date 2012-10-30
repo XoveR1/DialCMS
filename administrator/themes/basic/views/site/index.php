@@ -1,16 +1,32 @@
-<?php $this->pageTitle=Yii::app()->name; ?>
+<div class="container-fluid">  
+    <div class="row-fluid">
+        <div class="span12">
+            <noscript>
+            <div class="alert in alert-block fade alert-error">
+                <a data-dismiss="alert" class="close">×</a>
+                <strong><?= Translator::_('ERROR_LABEL') ?></strong> 
+                <?= Translator::_('ERROR_NO_JS_SUPPORT') ?>  
+                <a href="http://www.enable-javascript.com/" target="_blank">
+                    <?= Translator::_('HOW_DO_THIS') ?> 
+                </a>
+            </div>
+            </noscript>
+        </div>
+    </div>
+</div>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<div id="preloaderBlock" style="display: none" class="preloader modal-backdrop">
+    <div class="progress progress-striped active center-block">
+        <div id="preloaderBar" class="bar" style="width: 0%;"></div>
+    </div>
+</div>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<? foreach (CSProvider::instance()->getCoreScripts()->getCollection() as $scriptUrl) : ?>
+    <script type="text/javascript" src="<?= $scriptUrl->getUrlToItem() ?>" ></script>
+<? endforeach; ?>
+<script type="text/javascript">
+    oCore.init('<?= CSProvider::instance()->getJQueryUploadItem()->getUrlToItem() ?>', 
+    <?= CSProvider::instance()->getJQueryUploadItem()->getSizeOfItem() ?>,
+    '<?= CSProvider::instance()->showJson(CSProvider::instance()->getUploadScripts(), true) ?>',
+    '<?= CSProvider::instance()->showJson(CSProvider::instance()->getLoadedClientConfig(), true) ?>');
+</script>

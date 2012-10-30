@@ -35,17 +35,17 @@ class CHtml
 	public static $errorCss='error';
 	/**
 	 * @var string the CSS class for required labels. Defaults to 'required'.
-	 * @see label
+	 * @see Translator
 	 */
 	public static $requiredCss='required';
 	/**
 	 * @var string the HTML code to be prepended to the required label.
-	 * @see label
+	 * @see Translator
 	 */
 	public static $beforeRequiredLabel='';
 	/**
 	 * @var string the HTML code to be appended to the required label.
-	 * @see label
+	 * @see Translator
 	 */
 	public static $afterRequiredLabel=' <span class="required">*</span>';
 	/**

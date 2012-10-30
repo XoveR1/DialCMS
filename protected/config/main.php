@@ -1,12 +1,9 @@
 <?php
 
-// uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
-return array(
-    'basePath' => SITE_LOCATION . DIRECTORY_SEPARATOR . 'protected',
-    'name' => 'Dial CMS',
+$iniArray = parse_ini_file(SYSTEM_CONFIG_LOCATION, true);
+
+$configArray = array(
+    'basePath' => SITE_LOCATION . DS . 'protected',
     'defaultController' => 'site',
     // preloading 'log' component
     'preload' => array('log'),
@@ -27,12 +24,16 @@ return array(
     // application components
     'components' => array(
         'user' => array(
+            'class' => 'WebUser',
             // enable cookie-based authentication
             'allowAutoLogin' => true,
             'loginUrl' => array('login')
         ),
-        // uncomment the following to enable URLs in path-format
-
+        'authManager' => array(
+            'class' => 'CDbAuthManager',
+            'connectionID' => 'db',
+            'defaultRoles' => array('guest'),
+        ),
         'urlManager' => array(
             'urlFormat' => 'path',
             'showScriptName' => false,
@@ -43,16 +44,7 @@ return array(
                 'login' => 'site/login'
             ),
         ),
-        // uncomment the following to use a MySQL database
-
-        'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=dial_cms',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-            'tablePrefix' => 'dial_'
-        ),
+        'db' => $iniArray['db'],
         'errorHandler' => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
@@ -64,20 +56,10 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-            // uncomment the following to show log messages on web pages
-            /*
-              array(
-              'class'=>'CWebLogRoute',
-              ),
-             */
             ),
         ),
     ),
-    // application-level parameters that can be accessed
-    // using Yii::app()->params['paramName']
-    'params' => array(
-        // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
-    ),
-    'theme'=>'basic'
+    'theme' => 'basic'
 );
+unset($iniArray['db']);
+return CMap::mergeArray($iniArray, $configArray);
